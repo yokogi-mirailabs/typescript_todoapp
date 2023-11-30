@@ -31,7 +31,7 @@ console.log(props.tasks);
         </tr>
       </thead>
       <tbody>
-        <template v-for="(task) in tasks">
+        <template v-for="(task) in props.tasks">
           <tr
             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
           >
@@ -43,9 +43,6 @@ console.log(props.tasks);
                   @click="emit('done', task.id)"
                   class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <!-- <label lass="sr-only"
-                  >checkbox</label
-                > -->
               </div>
             </td>
             <td class="py-4 px-6 text-white">
