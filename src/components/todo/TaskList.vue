@@ -45,13 +45,13 @@ console.log(props.tasks);
                 />
               </div>
             </td>
-            <td class="py-4 px-6 text-white">
-              <span v-if="task.done">
+            <td class="py-4 px-6">
+              <label v-if="task.done">
                 <del>{{ task.title }}</del>
-              </span>
-              <span v-else class="font-medium text-white">
+              </label>
+              <label v-else class="font-medium">
                 {{ task.title }}
-              </span>
+              </label>
             </td>
             <td class="py-4 px-6">
               <button type="button" @click="emit('delete', task.id)">
