@@ -10,10 +10,6 @@ const menuItems: MenuItem[] = [
     title: "ToDo",
     url: "/todo",
   },
-  {
-    title: "Book",
-    url: "/book",
-  },
 ];
 </script>
 
